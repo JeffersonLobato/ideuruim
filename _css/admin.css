@@ -1,0 +1,530 @@
+@font-face{
+	font-family: Montserrat;
+	src: url("../_font/Montserrat-Regular.ttf");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+html,body{
+	height: 100%;
+	background-color: rgb(230,230,230);
+}
+
+.clear {
+	clear: both;
+}
+
+.painel{
+	position: absolute;
+	background-color: #757575;
+	width: 33vw;
+	min-width: 350px;
+	min-height: 45vh;
+	border: 1px solid rgb(150,150,150);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+	box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+}
+
+.painel h1{
+	text-align: center;
+	color: rgb(220,220,220);
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+}
+
+.login, .senha{
+	width: 60%;
+	background-color: rgb(230,230,230);
+	border-radius: 20px;
+	outline: none;
+	border: 0.5px solid rgb(150,150,150);
+	height: 40px;
+	padding: 10px;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.painel label{
+	padding-left: 30px;
+	font-size: 22px;
+	color: rgb(220,220,220);
+}
+
+.logar{
+	cursor: pointer;
+	background-color: rgb(255,15,15);
+	width: 33%;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: rgb(255,255,255);
+
+}
+
+.logar:hover{
+	transition: 1s;
+	background-color: rgb(255,60,60);
+}
+
+.erro-box{
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	color: rgb(255,15,15);
+	background-color: rgb(200,200,200);
+}
+
+
+/*---- PAINEL -----*/
+
+header{
+	width: 80%;
+	float: right;
+	height: 150px;
+}
+
+
+.menu-sair{
+	float: right;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(150,150,150);
+}
+
+.center-menu{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.logo{
+	padding-top: 20px;
+	width: 100px;
+	float: left;
+
+}
+
+.sair{
+	cursor: pointer;
+	float: right;
+	background-color: rgb(220,220,220);
+	outline: none;
+	font-size: 20px;
+	margin-top: 75px;
+	width: 100px;
+	height: 50px;
+	transform: translateY(-50%);
+	border-radius: 25px;
+	border: 1px solid rgb(100,100,100);
+	text-align: center;
+}
+
+
+.sair span{
+	display: inline-block;
+	margin-top: 25px;
+	transform: translateY(-50%);
+	color: black;
+	font-size: 22px;
+}
+
+.sair:hover{
+	background-color: rgb(235,235,235);
+}
+
+aside{
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-color: rgb(70,70,70);
+	overflow: auto;
+}
+
+aside::-webkit-scrollbar {
+	width: 8px;
+}
+
+aside::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+aside::-webkit-scrollbar-thumb {
+	background: rgb(120,120,120); 
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+	background: rgb(180,180,180); 
+}
+
+aside::-webkit-scrollbar-track {
+	background: #ccc; 
+}
+
+
+.control-titulo{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.control-titulo h2{
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	padding-top: 60px;
+
+
+}
+
+
+.control-banner, .control-produtos, .control-servicos, .control-contato{
+
+	width: 100%;
+	min-height: 100px;
+	border-bottom: 1px solid rgb(200,200,200);
+
+}
+
+.control-banner h3, .control-produtos h3, .control-servicos h3, .control-contato h3{
+
+	cursor: pointer;
+	color: #fff;
+	padding-top: 36px;
+	text-align: center;
+
+}
+
+.control-servicos h3{
+	padding-bottom: 30px;
+}
+
+.add-rem-serv{
+	display: none;
+	width: 100%;
+	min-height: 30px;
+	border-bottom: 1px solid rgb(200,200,200);
+	background-color: rgb(120,120,120);
+
+}
+
+.add-rem-serv h5{
+
+	cursor: pointer;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+
+}
+
+
+
+/*------------Páginas de controle-------------------*/
+
+
+/*------------Página principal----------------------*/
+
+a{
+	text-decoration: none;
+}
+
+.display-principal, .display-home, .display-produtos, .display-add-servicos, .display-rem-servicos, .display-contatos{
+	width: 100%;
+	height: 100%;
+}
+
+
+.page-principal{
+
+	width: 80%;
+	height: calc(100% - 150px);
+	float: right;
+}
+
+.page-principal h1{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.page-principal p{
+
+	text-align: justify;
+	padding-top: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+/*-----------Banner da página home-----------------*/
+
+.page-control{
+
+	width: 80%;
+	height: calc(100% - 150px);
+	float: right;
+	background-color: #fff;
+}
+
+.atualizado{
+	text-align: center;
+	color: rgb(0,200,0);
+	padding-top: 5px;
+}
+
+.banner{
+	width: 100%;
+	height: calc((100vh - 150px) / 4);
+	border-top: 1px solid rgb(170,170,170);
+}
+
+.banner label{
+	padding-left: 20px;
+}
+
+.banner input{
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+
+.botao-salvar{
+	width: 100%;
+	height: calc((100vh - 150px) / 4);
+	text-align: center;
+
+}
+
+.botao-salvar input{
+
+	margin-top: 10px;
+	cursor: pointer;
+	padding: 10px 15px 10px 10px;
+	font-size: 20px;
+	border-radius: 15px;
+	outline: none;
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(180,180,180);
+
+
+}
+
+.botao-salvar input:hover{
+	transition: 1s;
+	background-color: rgb(210,210,210);
+}
+
+
+
+/*-------------Controle da página produtos--------------------*/
+
+.imagem-invalida{
+	text-align: center;
+	color: red;
+	padding-top: 5px;
+}
+
+.mais-produtos{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 15px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: black;
+	outline: none;
+	
+
+}
+
+.text-mais-prod{
+	display: inline-block;
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-right: 20px;
+	
+}
+
+.slide{
+	margin: 30px auto 20px auto;
+	width: 60%;
+
+}
+
+.produto-single{
+	width: 150px;
+	-webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+	margin-top: 10px;
+}
+
+.prod{
+	text-align: center;
+}
+
+.prod p{
+	margin-top: 10px;
+}
+
+/*------------------Página de controle de serviços-------------------*/
+
+.page-servicos{
+
+	width: 80%;
+	height: calc(100% - 150px);
+	float: right;
+	background-color: #fff;
+
+}
+
+.select-servico{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.marca, .modelo{
+	display: inline-block;
+	text-align: center;
+}
+
+.select-servico select{
+	width: 200px;
+	padding-left: 10px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+.select-servico label{
+	font-size: 15px;
+	color: rgb(150,150,150);
+}
+
+
+.slide-serv{
+
+	margin: 10px auto 10px auto;
+	width: 60%;
+	height: 33%;
+
+}
+
+.serv{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.separador{
+	float:left;
+	margin-top: 10px;
+}
+
+
+.text-mais-serv{
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 20px;
+	
+}
+
+.mais-servicos{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 30px;
+	margin-top: 15px;
+
+}
+
+.serv-indiv{
+	width: 300px;
+	height: 310px;
+	text-align: justify;
+	padding:15px;
+	margin: 20px;
+	-webkit-box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+
+}
+
+.serv-indiv h3{
+	text-align: center;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+.checkbox{
+	position: absolute;
+	bottom: 30px;
+}
+
+.sucesso{
+	padding-top: 30px;
+	text-align: center;
+	color: rgb(15,230,15);
+}
+
+/*----------Add-serviços-----------------------*/
+
+.add-serv{
+	text-align: left !important;
+}
+
+.titulo-serv{
+
+	padding: 5px;
+	outline: none;
+
+}
+
+.text-serv{
+	padding: 5px;
+	outline: none;
+	width: 500px;
+	height: 100px;
+	resize: none;
+
+}
+
+.salvar-serv{
+
+	margin-left: 500px;
+	margin-top: 30px;
+	cursor: pointer;
+	padding: 10px 15px 10px 10px;
+	font-size: 20px;
+	border-radius: 15px;
+	outline: none;
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(180,180,180);
+
+
+}
+
+.salvar-serv:hover{
+	transition: 1s;
+	background-color: rgb(210,210,210);
+}
+
+

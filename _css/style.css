@@ -1,0 +1,658 @@
+@font-face{
+	font-family: Montserrat;
+	src: url("../_font/Montserrat-Regular.ttf");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.load{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	background-color: rgb(10,10,10);
+	color: rgb(230,15,15);
+}
+
+.load p{
+	position: absolute;
+	top: 50vh;
+	right: 50vw;
+	transform: translateX(-50%);
+	transform: translateY(-50%);
+}
+
+
+/*AQUI COMEÇA O MENU DESKTOP*/
+
+.logo-whatsapp{
+	position: fixed;
+	display: block;
+	width: 12vw;
+	z-index: 999;
+	top: 80vh;
+	left: 85vw;
+}
+
+.whatsapp{
+	width: 100%;
+}
+
+header{
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+	background: rgba(0,0,0,0.35);
+	position: fixed;
+	z-index: 999;
+}
+
+.menu-mobile{
+	display: none;
+
+}
+
+.center-menu{
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+.logo{
+	width: 8vw;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.menu{
+	float: right;
+
+}
+
+.menu-hamburguer{
+	display: none;
+}
+
+.menu-desktop{
+	float:right;
+	padding-top: 50px;
+}
+
+nav li{
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 30px;
+	color: rgb(220,220,220);
+}
+
+
+.logo-insta, .logo-face{
+	float: right;
+	width: 3vw;
+	margin-left: 20px;
+	padding-top: 45px;
+}
+
+/*AQUI TERMINA O MENU DESKTOP*/
+
+
+/*AQUI COMEÇA O BANNER DA PÁGINA HOME*/
+
+.home{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+
+.banner{
+	display: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+.saiba-mais{
+	cursor: pointer;
+	position: absolute;
+	width: 20vw;
+	height: 12vh;
+	top: 75vh;
+	color: #ffffff;
+	font-size: 2.5vw;
+	border: 1px solid rgba(0,0,0,0.5);
+	outline: none;
+	border-radius: 15px;
+	background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255,60,60) 100%);
+	margin-left: calc(50% - 10vw);
+
+}
+
+.saiba-mais:hover{
+	background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255,120,120) 100%);
+
+
+}
+
+
+/*AQUI TERMINA O BANNER DA PÁGINA HOME*/
+
+
+/*AQUI COMEÇA A SEÇÃO PRODUTOS*/
+
+h1{
+	display:none;
+	color: rgb(150,150,150);
+}
+
+.produtos{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(70,70,70);
+}
+
+.center-produtos{
+	display: block;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.slide{
+	padding-top: 170px;
+	width: 100%;
+}
+
+.slide-single{
+	float: left;
+	width: calc(100% / 3);
+	height: 100%;
+}
+
+.produto-single{
+	display: block;
+	width: 80%;
+	margin: 10px;
+	
+	-webkit-box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+	box-shadow: 7px 6px 19px 2px rgba(0,0,0,0.75);
+}
+
+
+/*AQUI TERMINA A SEÇÃO PRODUTOS*/
+
+
+/*AQUI COMEÇA A SEÇÃO SERVIÇOS*/
+.servicos{
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+.center-servicos{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 30vh;
+}
+
+.marca, .modelo{
+	display: inline-block;
+}
+
+.center-servicos select{
+	width: 200px;
+	padding-left: 10px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+.center-servicos label{
+	font-size: 15px;
+	color: rgb(150,150,150);
+}
+
+
+.servicos-gerais{
+	width: 80%;
+	margin: 30px auto 0 auto;
+}
+
+.separador{
+	width: 33%;
+	float:left;
+	margin-top: 10px;
+}
+
+.serv-indiv{
+	width: 90%;
+	text-align: justify;
+	min-height: 40vh;
+	padding:15px;
+	margin: 20px;
+	-webkit-box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 8px 1px rgba(0,0,0,0.75);
+
+}
+
+.serv-indiv h3{
+	text-align: center;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+
+
+/*AQUI TERMINA A SEÇÃO SERVIÇOS*/
+
+
+/*AQUI COMEÇA A SEÇÃO CONTATOS*/
+
+.contato{
+	width: 100%;
+	min-height: 90vh;
+	background-color: rgb(70,70,70);
+}
+
+.center-contato{
+	display: flex;
+	width: 80%;
+	min-height: 90vh;
+	margin: 0 auto;
+}
+
+.todos-contatos{
+	padding-top: 35vh;
+	width: 50%;
+	height: 90vh;
+	text-align: justify;
+}
+
+.todos-contatos h1{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding-bottom: 40px;
+}
+
+.todos-contatos a{
+	text-decoration: none;
+	color: red;
+}
+
+.todos-contatos h3{
+	text-align: center;
+	color: #ffffff;
+}
+
+.todos-contatos span{
+	display: block;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 3vw;
+	color: #ffffff;
+}
+
+.location{
+	width: 50%;
+	height: 90vh;
+}
+
+.maps-location{
+	width: 95%;
+	height: 50vh;
+	margin-top: 37vh;
+	margin-left: 5vw;
+	-webkit-box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+	box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+}
+
+
+/*AQUI TERMINA A SEÇÃO CONTATOS*/
+
+
+/*AQUI COMEÇA O RODAPÉ*/
+
+footer{
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+}
+
+footer span{
+	display: block;
+	color: #646464;
+}
+
+footer span:first-child{
+	padding-top: 2vh;
+}
+
+footer a{
+	text-decoration: none;
+	color: #646464;
+}
+
+.footer-mobile{
+	display: none;
+}
+
+/*AQUI TERMINA O RODAPÉ*/
+
+
+
+/*AQUI COMEÇA O RESPONSIVO*/
+
+@media screen and (max-width: 1000px){
+
+
+	/*AQUI COMEÇA O MENU RESPONSIVO*/
+	
+	.logo{
+		width: 10vw;
+		margin-left: 2%;
+	}
+
+	.center-menu{
+		width: 90%;
+	}
+
+	.menu-hamburguer{
+		display: block !important;
+		width: 10vw !important;
+		float: right !important;
+		margin-top: 25px !important;
+		margin-bottom: 20px !important;
+		color: #ffffff !important;
+	}
+
+	.menu-mobile{
+		width: 50%;
+		position: absolute;
+		float: right;
+		top: 13vh;
+		right: 10px;
+		font-size: 27px;
+		background-color: #ffffff;
+
+	}
+
+	nav li{
+		color: rgb(100,100,100);
+		text-align: center;
+		border-bottom: 2px solid rgba(100,100,100,0.5);
+		width: 100%;
+		height: 40px;
+		font-size: 18px;
+	}
+
+
+	.menu-desktop{
+		display: none;
+	}
+
+	.logo-insta, .logo-face{
+		display: none;
+	}
+
+
+	/*AQUI TERMINA O MENU RESPONSIVO*/
+
+
+	/*AQUI COMEÇA O BANNER DA PÁGINA HOME RESPONSIVO*/
+
+
+	.saiba-mais{
+		width: 200px;
+		height: 50px;
+		top: 50vh;
+		font-size: 27px;
+		border: 1px solid rgba(0,0,0,0.5);
+		border-radius: 10px;
+		background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255,60,60) 100%);
+		margin-left: calc(50% - 100px);
+	}
+	
+	/*AQUI TERMINA O BANNER DA PÁGINA HOME RESPONSIVO*/
+
+	/*AQUI COMEÇA A SEÇÃO PRODUTOS RESPONSIVO*/
+
+	h1{
+
+		display: inline-block;
+		margin-top: 18vh;
+		font-size: 30px;
+
+
+	}
+
+	.center-produtos{
+		display: block;
+		width: 70%;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.slide{
+		padding-top: 50px;
+	}
+
+	.slide-single{
+		float: left;
+		width: 100%;
+	}
+
+	.produto-single{
+		display: block;
+		width: 80%;
+		margin: 10px;
+		
+	}
+
+	/*AQUI TERMINA A SEÇÃO PRODUTOS RESPONSIVO*/
+
+	/*AQUI COMEÇA A SEÇÃO SERVIÇOS RESPONSIVO*/
+	
+	.servicos{
+		width: 100%;
+		text-align: center;
+	}
+
+	.center-servicos{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+
+/*AQUI TERMINA A SEÇÃO SERVIÇOS RESPONSIVO*/
+
+}
+
+
+@media screen and (max-width: 667px){
+
+
+	.logo-whatsapp{
+
+		width: 25vw;
+		left: 70vw;
+		top: 80vh;
+		
+	}
+
+/*RESPONSIVO BANNER*/
+
+/*RESPONSIVO BANNER*/
+
+
+
+/*RESPONSIVO SEÇÃO PRODUTOS MOBILE*/
+
+
+	.center-produtos{
+		width: 100%;
+
+	}
+
+
+/*AQUI TERMINA A SEÇÃO PRODUTOS RESPONSIVO MOBILE*/
+
+/*AQUI COMEÇA A SEÇÃO SERVIÇOS RESPONSIVO MOBILE*/
+
+	.center-servicos select{
+		
+		margin: 0 auto;
+		width: 30%;
+		padding-left: 0px;
+		font-size: 15px;
+		padding-top: 0;
+		margin-top: 10px;
+	}
+
+	.center-servicos label{
+		
+		padding-top: 10px;
+		font-size: 15px;
+		color: rgb(150,150,150);
+	}
+	
+	.center-servicos{
+		width: 100vw;
+		padding-top: 0;
+	}
+
+	.marca, .modelo{
+		display: block;
+	}
+	.servicos{
+		width: 100vw;
+		text-align: center;
+	}
+
+
+	.separador{
+		width: 90vw;
+		min-height: 50vh;
+		float:left;
+		padding: 0px;
+		margin-top: 0px;
+		text-align: justify;
+	}
+
+
+
+	.serv-indiv{
+		width: 70vw;
+		min-height: 40vh;
+		font-size: 12px;
+		margin: 0;
+
+}
+
+	
+
+/*AQUI TERMINA A SEÇÃO SERVIÇOS MOBILE*/
+
+/*AQUI COMEÇA A SEÇÃO CONTATOS MOBILE*/
+
+	.contato{
+		width: 100%;
+		background-color: rgb(70,70,70);
+		text-align: center;
+	}
+
+
+	.center-contato{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.todos-contatos{
+		margin: 0 auto;
+		padding-top: 0;
+		width: 80%;
+		height: 100vh;
+	}
+
+	.todos-contatos h3{
+		font-size: 16px;
+	}
+
+	.todos-contatos span{
+		display: block;
+		padding-top: 6vh;
+		padding-left: 3vw;
+		color: #ffffff;
+	}
+
+	.location{
+		width: 100%;
+		height: 90vh;
+		background-color: #ffffff;
+	}
+
+	.h1-location{
+		margin-top: 100px;
+	}
+
+	.maps-location{
+		width: 90%;
+		margin-top: 2vh;
+		margin-left: 5vw;
+		-webkit-box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+		box-shadow: 11px 10px 4px -2px rgba(0,0,0,0.75);
+	}
+
+	/*AQUI TERMINA A SEÇÃO LOCATION E CONTATOS RESPONSIVO*/
+
+	/*AQUI COMEÇA O FOOTER RESPONSIVO*/
+
+		.footer-desktop{
+			display: none;
+		}
+
+		.footer-mobile{
+			display: inline-block;
+			width: 50%;
+		}
+
+		footer span{
+			padding-top: 0;
+			padding-left: 5%;
+			font-size: 10px;
+		}
+
+		footer{
+			text-align: center;
+			border-top: 1px solid #cccccc;
+		}
+
+
+
+	/*AQUI TERMINA O FOOTER RESPONSIVO*/
+}
